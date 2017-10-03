@@ -39,18 +39,18 @@ In any separable infinite dimensional Banach space, there exists a purely 1-unre
 
 # A new approach
 *   It is natural to consider Lipschitz mappings of a metric space $X$ into an Euclidean space.
-*   Let $\operatorname{Lip}(X,\mathbb R^m, L)$ be the set of all bounded $L$-Lipschitz $f\colon X \to \mathbb R^m$ equipped with the supremum norm.
-*   This is a complete metric space and so we can consider a typical $L$-Lipschitz function (i.e. residual/comeagre in the sense of Baire category: a set that contains a countable intersection of open dense sets).
-*   "A typical $L$-Lipschitz function" is a suitable candidate to replace "almost every projection".
+*   Let $\operatorname{Lip}(X,\mathbb R^m)$ be the set of all bounded 1-Lipschitz $f\colon X \to \mathbb R^m$ equipped with the supremum norm.
+*   This is a complete metric space and so we can consider a typical 1-Lipschitz function (i.e. residual/comeagre in the sense of Baire category: a set that contains a countable intersection of open dense sets).
+*   "A typical 1-Lipschitz function" is a suitable candidate to replace "almost every projection".
 
-# A new characterisation I
+# A new characterisation
 
 \begin{theorem}[B]
   Let $S\subset X$ be purely $n$-unrectifiable with $\mathcal H^n(S)<\infty$ and
   \begin{equation}\liminf_{r\to 0}\frac{\mathcal H^n(B(x,r))}{r^n}>0 \tag{$*$}\end{equation}
   for $\mathcal H^n$-a.e. $x\in S$.
 
-  For any $L\geq 0$ and $m\in\mathbb N$, a typical $f \in \operatorname{Lip}(X,\mathbb R^m,L)$ satisfies
+  For any $m\in\mathbb N$, a typical $f \in \operatorname{Lip}(X,\mathbb R^m)$ satisfies
   $$\mathcal H^n(f(S))=0.$$
 \end{theorem}
 
@@ -58,16 +58,16 @@ In any separable infinite dimensional Banach space, there exists a purely 1-unre
 
 *   If $S\subset \mathbb R^{m'}$, $(*)$ is not necessary.
 *   Using deep results of the structure of Lebesgue null sets announced by Csörnyei-Jones, $(*)$ is never necessary.
-*   If $\mathcal H^s(S)<\infty$ with $s\not\in \mathbb N$, then a typical $f\in \operatorname{Lip}(X,\mathbb R^m,L)$ satisfies $\mathcal H^s(f(S))=0$.
+*   If $\mathcal H^s(S)<\infty$ with $s\not\in \mathbb N$, then a typical $f\in \operatorname{Lip}(X,\mathbb R^m)$ satisfies $\mathcal H^s(f(S))=0$.
 
-# A new characterisation II
-As with BF, we get a strong converse.
+# The converse statement
+As with BF, we can do better than the converse.
 
 \pause
 
 \begin{theorem}[B]
   Let $S\subset X$ be $n$-rectifiable.
-  For any $L > 0$ and $m\geq n$, a typical $f \in \operatorname{Lip}(X,\mathbb R^m,L)$ satisfies
+  For any $m\geq n$, a typical $f \in \operatorname{Lip}(X,\mathbb R^m)$ satisfies
   $$\mathcal H^n(f(S))>0.$$
 \end{theorem}
 
@@ -76,7 +76,7 @@ As with BF, we get a strong converse.
 *   This direction is simpler: uses Kirchheim's description of rectifiable metric spaces.
 
 # Idea of the proof of the main direction I
-Given $f\in \operatorname{Lip}(X,\mathbb R^m, L)$, we must make arbitrarily small modifications to obtain a $\tilde f$ such that $\mathcal H^n(\tilde f(S))$ is arbitrarily small.  These modifications **cannot** increase the Lipschitz constant.
+Given $f\in \operatorname{Lip}(X,\mathbb R^m)$, we must make arbitrarily small modifications to obtain a $\tilde f$ such that $\mathcal H^n(\tilde f(S))$ is arbitrarily small.  These modifications **cannot** increase the Lipschitz constant.
 
 \pause
 
@@ -100,12 +100,14 @@ $$(f\circ \gamma)'(t) \in V_{\gamma(t)} \quad \mathcal H^1\text{-a.e. } t\in \ga
     -   $\dim V_x= n-1$ $\Rightarrow$ can reduce $\mathcal H^n(f(S))$ to an arbitrarily small value.
 
 
-# Other results I
-The are other targets that are interesting from the point of vi
-ew of metric spaces.
+# Perturbations of distances I
+*   The are other targets that are interesting from the point of view of metric spaces.
+*   Recall that any separable metric space can be isometrically embedded into $\ell_\infty$.
+*   If $S$ is compact, then for any $\epsilon>0$ there exists a 1-Lipschitz mapping $f$ into $\ell_\infty^{m(\epsilon)}$ such that $|d(x,y)-\|f(x)-f(y)\|_\infty|<\epsilon$ for each $x,y\in S$.
+*   Applying the Euclidean squeezing argument to $f$ gives a $\tilde f$ with a huge Lipschitz constant (because of the ralationship between $\|.\|_2$ and $\|.\|_\infty$ in $\mathbb R^{m}$).
+*   If we are more careful we can obtain something more useful.
 
-\pause
-
+# Perturbations of distances II
 \begin{theorem}[B]
 Let $S$ be compact purely $n$-unrectifiable with $\mathcal H^n(S)<\infty$ + $(*)$.
 For any $\epsilon>0$ $\exists$ $L(n)$-Lipschitz $\sigma \colon S \to \ell_\infty^{m(\epsilon)}$ with
@@ -116,15 +118,15 @@ $$\mathcal H^n(\sigma(S))<\epsilon.$$
 
 \pause
 
-*   Since $L(n)$ is independent of $\epsilon$, have suitable converse.
-*   As for the case of Euclidean targets, this is difficult (and even more so).
-*   $(*)$ is not necessary under the same conditions as before.  
+*   Since $L(n)$ is independent of $\epsilon$, we have a suitable converse.
+*   As for the case of Euclidean targets, controlling the Lipschitz constant is difficult (and even more so).
+*   $(*)$ is not necessary under the same conditions as before, and have the corresponding statement for $\mathcal H^s(S)$, $s\not \in N$.
 
-# Other results II
+# Perturbations of sets
 
 *   If $S$ is a subset of a Banach space $B$ with an _unconditional basis_ ($\ell_1$, $L^p(\mu)$ $1<p<\infty$, $c_0$,\ldots) then $\sigma$ can be chosen to be a genuine perturbation.
 *   That is, $\exists$ $L(n,B)$-Lipschitz $\sigma \colon B \to B$ with
 $$\|x - \sigma(x)\|<\epsilon \quad \forall x\in S$$
 and
 $$\mathcal H^n(\sigma(S))<\epsilon.$$
-*   Generalises a result of H. Pugh who proved this for Ahlfors regular subsets of Euclidean space.
+*   Generalises a result of H. Pugh who proved this for Ahlfors regular subsets of Euclidean space.  The construction relies on BF.
