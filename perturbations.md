@@ -89,7 +89,7 @@ If $S$ has $n$ "Alberti representations", then $S$ is $n$-rectifiable.
 
 *   $\Rightarrow$ for any Lipschitz $f\colon X \to \mathbb R^m$, (after removing a set of $\mathcal H^n$ measure zero) $\exists$ $n-1$ dimensional "weak tangent field": $V_x \in G(m,n-1)$ s.t. any 1-rectifiable set $\gamma \subset S$ has
 $$\operatorname{Tan}_{f(x)}f(\gamma) \in V_{x} \quad \mathcal H^1\text{-a.e. } x\in \gamma.$$
-*   If $S\subset \mathbb R^{m'}$, or using the announcement of Csörnyei-Jones, the theorem can be proved without assuming $(*)$.  Similarly, the theorem is true for the case $s\not\in \mathbb N$.
+*   If $S\subset \mathbb R^{m'}$, or using the announcement of Csörnyei-Jones, the theorem can be proved without assuming $(*)$.  Similarly, the consequence is true for the case $s\not\in \mathbb N$.
 
 # Idea of the proof of the main direction II
 
