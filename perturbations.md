@@ -39,7 +39,7 @@ In any separable infinite dimensional Banach space, there exists a purely 1-unre
 
 # A new approach
 *   It is natural to consider Lipschitz mappings of a metric space $X$ into an Euclidean space.
-*   Let $\operatorname{Lip}(X,\mathbb R^m)$ be the set of all bounded 1-Lipschitz $f\colon X \to \mathbb R^m$ equipped with the supremum norm.
+*   Let $\operatorname{Lip}_1(X,\mathbb R^m)$ be the set of all bounded 1-Lipschitz $f\colon X \to \mathbb R^m$ equipped with the supremum norm.
 *   This is a complete metric space and so we can consider a typical 1-Lipschitz function (i.e. residual/comeagre in the sense of Baire category: a set that contains a countable intersection of open dense sets).
 *   "A typical 1-Lipschitz function" is a suitable candidate to replace "almost every projection".
 
@@ -50,7 +50,7 @@ In any separable infinite dimensional Banach space, there exists a purely 1-unre
   \begin{equation}\liminf_{r\to 0}\frac{\mathcal H^n(B(x,r))}{r^n}>0 \tag{$*$}\end{equation}
   for $\mathcal H^n$-a.e. $x\in S$.
 
-  For any $m\in\mathbb N$, a typical $f \in \operatorname{Lip}(X,\mathbb R^m)$ satisfies
+  For any $m\in\mathbb N$, a typical $f \in \operatorname{Lip}_1(X,\mathbb R^m)$ satisfies
   $$\mathcal H^n(f(S))=0.$$
 \end{theorem}
 
@@ -58,16 +58,16 @@ In any separable infinite dimensional Banach space, there exists a purely 1-unre
 
 *   If $S\subset \mathbb R^{m'}$, $(*)$ is not necessary.
 *   Using deep results of the structure of Lebesgue null sets announced by Csörnyei-Jones, $(*)$ is never necessary.
-*   If $\mathcal H^s(S)<\infty$ with $s\not\in \mathbb N$, then a typical $f\in \operatorname{Lip}(X,\mathbb R^m)$ satisfies $\mathcal H^s(f(S))=0$.
+*   If $\mathcal H^s(S)<\infty$ with $s\not\in \mathbb N$, then a typical $f\in \operatorname{Lip}_1(X,\mathbb R^m)$ satisfies $\mathcal H^s(f(S))=0$.
 
 # The converse statement
-As with BF, we can do better than the converse.
+As with BF, we get a strong converse.
 
 \pause
 
 \begin{theorem}[B]
   Let $S\subset X$ be $n$-rectifiable.
-  For any $m\geq n$, a typical $f \in \operatorname{Lip}(X,\mathbb R^m)$ satisfies
+  For any $m\geq n$, a typical $f \in \operatorname{Lip}_1(X,\mathbb R^m)$ satisfies
   $$\mathcal H^n(f(S))>0.$$
 \end{theorem}
 
@@ -75,8 +75,8 @@ As with BF, we can do better than the converse.
 
 *   This direction is simpler: uses Kirchheim's description of rectifiable metric spaces.
 
-# Idea of the proof of the main direction I
-Given $f\in \operatorname{Lip}(X,\mathbb R^m)$, we must make arbitrarily small modifications to obtain a $\tilde f$ such that $\mathcal H^n(\tilde f(S))$ is arbitrarily small.  These modifications **cannot** increase the Lipschitz constant.
+# Idea of the proof of the main direction
+Given $f\in \operatorname{Lip}_1(X,\mathbb R^m)$, we must make arbitrarily small modifications to obtain a $\tilde f$ such that $\mathcal H^n(\tilde f(S))$ is arbitrarily small.  These modifications **cannot** increase the Lipschitz constant.
 
 \pause
 
@@ -87,16 +87,16 @@ If $S$ has $n$ "Alberti representations", then $S$ is $n$-rectifiable.
 
 \pause
 
-*   $\Rightarrow$ for any Lipschitz $f\colon X \to \mathbb R^m$, $\exists$ $n-1$ dimensional "weak tangent field": $V_x \in G(m,n-1)$ s.t. any rectifiable curve $\gamma \subset S$ has
-$$(f\circ \gamma)'(t) \in V_{\gamma(t)} \quad \mathcal H^1\text{-a.e. } t\in \gamma.$$
-*   If $S\subset \mathbb R^{m'}$ or using the announcement of Csörnyei-Jones, the assumption of $(*)$ can be removed at this step.  Similarly for the case $s\not\in \mathbb N$.
+*   $\Rightarrow$ for any Lipschitz $f\colon X \to \mathbb R^m$, (after removing a set of $\mathcal H^n$ measure zero) $\exists$ $n-1$ dimensional "weak tangent field": $V_x \in G(m,n-1)$ s.t. any 1-rectifiable set $\gamma \subset S$ has
+$$\operatorname{Tan}_{f(x)}f(\gamma) \in V_{x} \quad \mathcal H^1\text{-a.e. } x\in \gamma.$$
+*   If $S\subset \mathbb R^{m'}$, or using the announcement of Csörnyei-Jones, the theorem can be proved without assuming $(*)$.  Similarly, the theorem is true for the case $s\not\in \mathbb N$.
 
 # Idea of the proof of the main direction II
 
-*   Have a weak tangent field: $V_x \in G(m,n-1)$ s.t. any rectifiable curve $\gamma \subset S$ has
-$$(f\circ \gamma)'(t) \in V_{\gamma(t)} \quad \mathcal H^1\text{-a.e. } t\in \gamma.$$
-*   To construct $\tilde f$, we wish to locally squeeze $f$ in all directions orthogonal to $V_x$.
-    -   Since there are no curves in these directions, this can be done without perturbing $f$ very much.
+*   Have a weak tangent field: $V_x \in G(m,n-1)$ s.t. any 1-rectifiable set $\gamma \subset S$ has
+$$\operatorname{Tan}_{f(x)}f(\gamma) \in V_{x} \quad \mathcal H^1\text{-a.e. } x\in \gamma.$$
+*   To construct $\tilde f$, we locally squeeze $f$ in all directions orthogonal to $V_x$.
+    -   Since there are no 1-rectifiable sets in these directions, this can be done without perturbing $f$ very much.
     -   $\dim V_x= n-1$ $\Rightarrow$ can reduce $\mathcal H^n(f(S))$ to an arbitrarily small value.
 
 
@@ -120,7 +120,7 @@ $$\mathcal H^n(\sigma(S))<\epsilon.$$
 
 *   Since $L(n)$ is independent of $\epsilon$, we have a suitable converse.
 *   As for the case of Euclidean targets, controlling the Lipschitz constant is difficult (and even more so).
-*   $(*)$ is not necessary under the same conditions as before, and have the corresponding statement for $\mathcal H^s(S)$, $s\not \in N$.
+*   $(*)$ is not necessary under the same conditions as before, and have the corresponding statement for $\mathcal H^s(S)$, $s\not \in \mathbb N$.
 
 # Perturbations of sets
 
