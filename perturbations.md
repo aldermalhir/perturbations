@@ -111,15 +111,15 @@ $$\operatorname{Tan}_{f(x)}f(\gamma) \in V_{x} \quad \mathcal H^1\text{-a.e. } x
 \begin{theorem}[B]
 Let $S$ be compact purely $n$-unrectifiable with $\mathcal H^n(S)<\infty$ + $(*)$.
 For any $\epsilon>0$ $\exists$ $L(n)$-Lipschitz $\sigma \colon S \to \ell_\infty^{m(\epsilon)}$ with
-$$|d(x,y)- \|\sigma(x)-\sigma(y)\||<\epsilon \quad \forall x,y\in S$$
+\begin{equation}\tag{1}|d(x,y)- \|\sigma(x)-\sigma(y)\||<\epsilon \quad \forall x,y\in S\end{equation}
 and
 $$\mathcal H^n(\sigma(S))<\epsilon.$$
 \end{theorem}
 
 \pause
 
-*   Since $L(n)$ is independent of $\epsilon$, we have a suitable converse.
-*   As for the case of Euclidean targets, controlling the Lipschitz constant is difficult (and even more so).
+*   Since $L(n)$ is independent of $\epsilon$, we have a suitable converse: if $S$ is $n$-rectifiable, $\inf_{L>0} \liminf_{\epsilon\to 0} \mathcal H^n(\sigma(S)) > 0,$
+$\sigma \colon R \to (Y,\rho)$ $L$-Lipschitz satisfying (1).
 *   $(*)$ is not necessary under the same conditions as before, and have the corresponding statement for $\mathcal H^s(S)$, $s\not \in \mathbb N$.
 
 # Perturbations of sets
