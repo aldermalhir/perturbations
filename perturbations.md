@@ -119,7 +119,7 @@ $$\mathcal H^n(\sigma(S))<\epsilon.$$
 \pause
 
 *   Since $L(n)$ is independent of $\epsilon$, we have a suitable converse: if $S$ is $n$-rectifiable, $\inf_{L>0} \liminf_{\epsilon\to 0} \mathcal H^n(\sigma(S)) > 0,$
-$\sigma \colon R \to (Y,\rho)$ $L$-Lipschitz satisfying (1).
+$\sigma \colon S \to (Y,\rho)$ $L$-Lipschitz satisfying (1).
 *   $(*)$ is not necessary under the same conditions as before, and have the corresponding statement for $\mathcal H^s(S)$, $s\not \in \mathbb N$.
 
 # Perturbations of sets
