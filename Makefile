@@ -1,3 +1,3 @@
-all:
-	pandoc -i -t beamer perturbations.md -o output/talk.pdf
+slides:
+	pandoc -i -t beamer slides.md -o output/slides.pdf
 
